@@ -1,0 +1,47 @@
+
+@font-face{
+    font-family : "Parqa Typeface";
+    src : url("../assets/font/parqa_typeface_a.ttf");
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, p{
+	color:white;
+	position: absolute;
+	z-index: 2;
+	font-family: "Parqa Typeface";
+	display: none;
+}
+
+#title{
+	
+	left: 100;
+	top: 100;
+	padding-left: 0px;
+	padding-top: 100px;
+	
+}
+
+#message{
+	margin-left: 45%;
+	margin-right: 45%;
+	padding: 2%;
+	width: 10%;
+	margin-top: 25%;
+	text-align: center;
+	display: none;
+	border: solid;
+
+
+}
+
+canvas{
+	display: none;
+}
