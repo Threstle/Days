@@ -20,7 +20,10 @@ var boats = [];
 var messagesTab = [];
 var vector, raycaster, isShiftDown = false;
 var mouse = new THREE.Vector2(), INTERSECTED;
-$(document).ready(init);
+$(document).ready(function(){
+    setTimeout(init,3000);
+});
+
 
 function init(){
 
@@ -93,7 +96,7 @@ function init(){
 
 
     setTimeout(function(){$('canvas').fadeIn(3000)},5000);
-    
+
 }
 
 function resizeHandler() {
@@ -105,7 +108,7 @@ function animate() {
     requestAnimationFrame(animate);
     webgl.render();
 
-    
+
 }
 
 function FadeIn(audio) {
@@ -120,16 +123,16 @@ function FadeIn(audio) {
         }
         else return;
 
-    
+
 }
 
 function onDocumentMouseMove( event ) {
 
-                
+
                 event.preventDefault();
 
                 mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
                 mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-    
+
 
 }
